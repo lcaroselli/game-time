@@ -1,5 +1,27 @@
+/* BASE STYLES */
+
+body {
+  background-color: lightblue;
+}
+
+#sootball {
+  height: 50px;
+  width: 50px;
+}
+
 #game {
   border: 1px dashed;
   margin: auto;
   display: block;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.reset-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
