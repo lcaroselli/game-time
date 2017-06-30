@@ -4,15 +4,15 @@ body {
   background-color: lightblue;
 }
 
-#sootball {
-  height: 50px;
-  width: 50px;
-}
-
 #game {
-  border: 1px dashed;
+  border: 2px solid black;
   margin: auto;
   display: block;
+}
+
+h1 {
+  font-family: 'Spectral', serif;
+  font-size: 30px;
 }
 
 h1, p {
