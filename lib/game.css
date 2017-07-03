@@ -11,17 +11,39 @@ body {
 }
 
 h1 {
-  font-family: 'Spectral', serif;
-  font-size: 30px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
 }
 
 h1, p {
+  font-family: 'Spectral', serif;
   text-align: center;
 }
 
+#lives {
+  margin-bottom: 5px;
+}
+
+#reset-game {
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  height: 40px;
+  margin: 0px;
+  width: 300px;
+}
+
+#reset-game:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
 .reset-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+  text-align: center;
 }
