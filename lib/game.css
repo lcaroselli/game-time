@@ -50,12 +50,20 @@ h1, p {
 
 #win-game {
   display: none;
+  border: 2px solid black;
+  margin: auto;
   height: 800px;
   width: 800px;
 }
 
 #lose-game {
   display: none;
+  border: 2px solid black;
+  margin: auto;
   height: 800px;
   width: 800px;
+}
+
+.game-state {
+  display:
 }
