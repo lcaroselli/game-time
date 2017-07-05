@@ -56,6 +56,11 @@ h1, p {
   width: 800px;
 }
 
+.game-state {
+  z-index: 100;
+  position: absolute;
+}
+
 #lose-game {
   display: none;
   border: 2px solid black;
