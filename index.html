@@ -13,7 +13,23 @@
     <p id='score'></p>
     <p id='high-score'></p>
   </section>
-  <canvas id="game" width="800" height="800"></canvas>
+  <main id="main-game">
+    <canvas id="game" width="800" height="800"></canvas>
+    <div id="win-game">
+     <img src="/img/sootstars.png"
+     alt="Soot sprites holding stars" id="win-game-img">
+     <h3 class="game-state">YOU WON!! Congratulations :) </h3>
+     <div class="game-directions">
+     <p>Press 'Reset Game' to play again!</p>
+    </div>
+    <div id="lose-game">
+     <img src=""
+     alt="..." id="lose-game-img">
+     <h3 class="game-state">Oh no! :( You lost.</h3>
+     <div class="game-directions">
+     <p>Press 'Reset Game' to play again!</p>
+    </div>
+ </main>
   <section>
     <p id='lives'></p>
   </section>
