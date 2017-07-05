@@ -1,11 +1,12 @@
 /* BASE STYLES */
 
 body {
+  background-image: url("/img/gamebackground2.png");
   background-color: lightblue;
 }
 
 #game {
-  border: 2px solid black;
+  border: 5px solid black;
   margin: auto;
   display: block;
 }
