@@ -14,7 +14,11 @@
     <p id='high-score'></p>
   </section>
   <main id="main-game">
+    <p id="instructions">Get the Soot to the fire 5 times to level up.</p>
     <canvas id="game" width="800" height="800"></canvas>
+    <div id="level-up">
+       <p class="game-state">Completed the level! Loading next level.</p>
+    </div>
     <div id="win-game">
      <!-- <img src="/img/sootstars.png"
      alt="Soot sprites holding stars" id="win-game-img"> -->
@@ -28,14 +32,14 @@
      alt="..." id="lose-game-img">
      <p class="game-state">Oh no! :( You lost.</p>
      <div class="game-directions">
-     <p>Press 'Reset Game' to play again!</p>
+     <button class="reset-game">Play again?</button>
     </div>
  </main>
   <section>
     <p id='lives'></p>
   </section>
   <section class="reset-btn">
-    <button id="reset-game">Reset Game</button>
+    <button class="reset-game">Reset Game</button>
   </section>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="main.bundle.js"></script>

@@ -27,7 +27,7 @@ h1, p {
   margin-bottom: 5px;
 }
 
-#reset-game {
+.reset-game {
   background-color: #000000;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
@@ -38,7 +38,7 @@ h1, p {
   width: 300px;
 }
 
-#reset-game:hover {
+.reset-game:hover {
   background-color: #FFFFFF;
   border: 1px solid #000000;
   color: #000000;
@@ -69,6 +69,19 @@ h1, p {
   width: 800px;
 }
 
+#level-up {
+  display: none;
+  border: 2px solid black;
+  margin: auto;
+  height: 800px;
+  width: 800px;
+}
+
 .game-state {
   display:
+}
+
+#instructions {
+  color: blue;
+  text-decoration: underline;
 }
