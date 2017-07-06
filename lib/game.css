@@ -1,4 +1,5 @@
-/* BASE STYLES */
+/*** BASE STYLES ***/
+
 * {
   margin: 0;
   padding: 0;
@@ -33,23 +34,17 @@ section {
   margin: 15px 0;
 }
 
-#game {
-  border: 5px solid #000;
-  margin: auto;
-  display: block;
+h1 {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 2px 2px #a3a3c2;
 }
 
 p {
   font-size: 30px;
   font-family: 'Roboto Mono', serif;
   text-align: center;
-  text-shadow: 2px 2px #a3a3c2;
-}
-
-h1 {
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  font-size: 80px;
   text-shadow: 2px 2px #a3a3c2;
 }
 
@@ -70,10 +65,20 @@ button:hover {
   color: #000;
 }
 
-#lives {
-  margin-bottom: 5px;
+.reset-btn-container {
+  text-align: center;
 }
 
+/*** GAME PAGES ***/
+
+/* CANVAS */
+#game {
+  border: 5px solid #000;
+  margin: auto;
+  display: block;
+}
+
+/* START */
 #start-page {
   display: block;
   height: 800px;
@@ -102,48 +107,55 @@ button:hover {
   width: 200px;
 }
 
-.reset-btn-container {
-  text-align: center;
-}
-
+/* WIN */
 #win-game {
   display: none;
   background-image: url("/img/sootstars.png");
-  border: 2px solid #000;
+  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
 }
 
-.game-state {
+.win-text {
   z-index: 100;
   position: absolute;
 }
 
+/* LOSE */
 #lose-game {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-image: url('/img/deadSoot.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: none;
-  border: 2px solid #000;
+  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
+}
+
+.game-over-text {
+  margin: 100px 20px;
+}
+
+.lose-text {
+  font-size: 40px;
+
+}
+
+.game-over-btn-container {
+  margin: 100px auto;
+  width: 220px;
+  height: 300px;
 }
 
 #level-up {
   color: #fff;
   display: none;
-  border: 2px solid #000;
+  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
-}
-
-.game-state {
-  display:
-}
-
-#instructions {
-  color: blue;
-  text-decoration: underline;
 }
