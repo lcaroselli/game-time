@@ -1,11 +1,36 @@
 /* BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-image: url("/img/gamebackground2.png");
-  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+}
+
+body::after {
+  content: "";
+  background: url("/img/soot-sprint-bkgrd2.jpeg");
+  opacity: 0.4;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  color: #000;
+}
+
+header {
+  margin: 15px 0;
+}
+
+section {
+  margin: 15px 0;
 }
 
 #game {
@@ -14,17 +39,35 @@ body {
   display: block;
 }
 
-h1 {
-  font-size: 40px;
-}
-
 p {
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Roboto Mono', serif;
+  text-align: center;
+  text-shadow: 2px 2px #a3a3c2;
 }
 
-h1, p {
-  font-family: 'Spectral', serif;
+h1 {
+  font-family: 'Cinzel', serif;
   text-align: center;
+  font-size: 80px;
+  text-shadow: 2px 2px #a3a3c2;
+}
+
+button {
+  border-radius: 30px;
+  padding: 10px 40px;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 #lives {
@@ -32,27 +75,34 @@ h1, p {
 }
 
 #start-page {
-  display: none;
+  display: block;
+  height: 800px;
+  width: 800px;
+  margin: auto;
+  background-image: url('/img/sootsprintstart.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid black;
 }
 
-.reset-game {
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 20px;
-  height: 40px;
-  margin: 0px;
-  width: 300px;
+.game-start-question {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  height: 200px;
+  width: 200px;
 }
 
-.reset-game:hover {
-  background-color: #FFFFFF;
-  border: 1px solid #000000;
-  color: #000000;
+.play-btn-container {
+  position: relative;
+  top: 450px;
+  left: 600px;
+  height: 200px;
+  width: 200px;
 }
 
-.reset-btn {
+.reset-btn-container {
   text-align: center;
 }
 
