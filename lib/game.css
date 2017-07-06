@@ -28,6 +28,10 @@ h1, p {
   margin-bottom: 5px;
 }
 
+#start-page {
+  display: none;
+}
+
 .reset-game {
   background-color: #000000;
   border: 1px solid #FFFFFF;
@@ -51,6 +55,7 @@ h1, p {
 
 #win-game {
   display: none;
+  background-image: url("/img/sootstars.png");
   border: 2px solid black;
   margin: auto;
   height: 800px;
