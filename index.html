@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Game Time</title>
-  <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Roboto+Mono" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -14,10 +14,14 @@
     <p id='high-score'></p>
   </section>
   <main id="main-game">
-    <p id="instructions">Get the Soot to the fire 5 times to level up.</p>
     <canvas id="game" width="800" height="800"></canvas>
     <div id="start-page">
-      <button class="btns" id="play-btn">Play</button>
+      <div class="game-start-question">
+        <p>Are you ready to win?! </p>
+      </div>
+      <div class="play-btn-container">
+        <button class="btns" id="play-btn">Play</button>
+      </div>
     </div>
     <div id="level-up">
        <p class="game-state">You completed the level!</p>
@@ -38,7 +42,7 @@
   <section>
     <p id='lives'></p>
   </section>
-  <section class="reset-btn">
+  <section class="reset-btn-container">
     <button class="reset-game">Reset Game</button>
   </section>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
