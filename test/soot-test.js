@@ -5,8 +5,8 @@ describe ('Soot', function() {
   let soot;
 
   beforeEach(function () {
-  soot = new Soot();
-})
+    soot = new Soot();
+  })
 
   it ('should be a function', function() {
     expect(soot).to.be.an.instanceof(Soot);

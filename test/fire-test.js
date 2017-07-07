@@ -25,6 +25,4 @@ describe ('Fire', function() {
   it ('should be drawn to the canvas', function() {
     expect(fire).to.respondTo('draw');
   })
-
-
 })

@@ -34,6 +34,4 @@ describe ('Harmless', function() {
   it ('should have a generateHarmless function', function() {
     expect(harmless).to.respondTo('generateHarmless');
   })
-
-
 })
