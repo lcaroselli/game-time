@@ -1,4 +1,5 @@
-/* BASE STYLES */
+/*** BASE STYLES ***/
+
 * {
   margin: 0;
   padding: 0;
@@ -25,25 +26,10 @@ body::after {
   color: #000;
 }
 
+/* Header */
+
 header {
   margin: 15px 0;
-}
-
-section {
-  margin: 15px 0;
-}
-
-#game {
-  border: 5px solid #000;
-  margin: auto;
-  display: block;
-}
-
-p {
-  font-size: 30px;
-  font-family: 'Roboto Mono', serif;
-  text-align: center;
-  text-shadow: 2px 2px #a3a3c2;
 }
 
 h1 {
@@ -53,11 +39,24 @@ h1 {
   text-shadow: 2px 2px #a3a3c2;
 }
 
+/* MAIN */
+
+section {
+  margin: 15px 0;
+}
+
+p {
+  font-size: 35px;
+  font-family: 'Roboto Mono', serif;
+  text-align: center;
+  text-shadow: 2px 2px #a3a3c2;
+}
+
 button {
   border-radius: 30px;
   padding: 10px 40px;
   background-color: #000;
-  border: 1px solid #fff;
+  border: 2px solid #a3a3c2;
   color: #fff;
   cursor: pointer;
   font-size: 30px;
@@ -65,15 +64,25 @@ button {
 }
 
 button:hover {
-  background-color: #fff;
-  border: 1px solid #000;
+  background-color: #a3a3c2;
+  border: 2px solid #000;
   color: #000;
 }
 
-#lives {
-  margin-bottom: 5px;
+.reset-btn-container {
+  text-align: center;
 }
 
+/*** GAME PAGES ***/
+
+/* CANVAS */
+#game {
+  border: 5px solid #000;
+  margin: auto;
+  display: block;
+}
+
+/* START */
 #start-page {
   display: block;
   height: 800px;
@@ -102,48 +111,92 @@ button:hover {
   width: 200px;
 }
 
-.reset-btn-container {
-  text-align: center;
-}
-
+/* WIN */
 #win-game {
   display: none;
   background-image: url("/img/sootstars.png");
-  border: 2px solid #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
 }
 
-.game-state {
-  z-index: 100;
-  position: absolute;
+.win-text-container {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  height: 200px;
+  width: 200px;
 }
 
+.win-text {
+  font-size: 30px;
+  text-align: left;
+}
+
+.play-again-btn-container {
+  position: relative;
+  top: 450px;
+  left: 510px;
+  height: 200px;
+  width: 300px;
+}
+
+/* LOSE */
 #lose-game {
-  color: #000;
-  background-color: #fff;
-  display: none;
-  border: 2px solid #000;
-  margin: auto;
-  height: 800px;
-  width: 800px;
-}
-
-#level-up {
   color: #fff;
+  background-image: url('/img/deadSoot.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: none;
-  border: 2px solid #000;
+  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
 }
 
-.game-state {
-  display:
+.game-over-text {
+  margin: 100px 20px;
 }
 
-#instructions {
-  color: blue;
-  text-decoration: underline;
+.lose-text {
+  font-size: 40px;
+}
+
+.game-over-btn-container {
+  margin: 100px auto;
+  width: 220px;
+  height: 300px;
+}
+
+/* LEVEL UP */
+#level-up {
+  display: none;
+  background-image: url('/img/level-up-soot.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #000;
+  border: 5px solid #000;
+  margin: auto;
+  height: 800px;
+  width: 800px;
+}
+
+.level-up-text-container {
+  margin: 100px 20px;
+}
+
+.level-up-text {
+  font-size: 40px;
+}
+
+.level-up-btn-container {
+  margin: 400px auto;
+  width: 225px;
+  height: 300px;
 }
