@@ -13,45 +13,45 @@
     <p id='score'></p>
     <p id='high-score'></p>
   </section>
-  <main id="main-game">
+  <main id="main-game" role="main">
     <canvas id="game" width="800" height="800"></canvas>
     <div id="start-page">
       <div class="game-start-question">
         <p>Are you ready to win?! </p>
       </div>
       <div class="play-btn-container">
-        <button class="btns play-btn">Play</button>
+        <button class="btns play-btn" aria-pressed="false">Play</button>
       </div>
     </div>
-    <div id="level-up">
+    <div id="level-up" aria-hidden="true">
       <div class="level-up-text-container">
         <p class="level-up-text">You completed the level!</p>
       </div>
       <div class="level-up-btn-container">
-        <button class="btns" id="next-level-btn">Next Level</button>
+        <button class="btns" id="next-level-btn" aria-pressed="false">Next Level</button>
       </div>
     </div>
-    <div id="win-game">
+    <div id="win-game" aria-hidden="true">
       <div class="win-text-container">
         <p class="win-text">Congratulations!!! You are now an elite Soot Sprinter!</p>
       </div>
       <div class="play-again-btn-container">
-        <button class="btns win-game-btn">Play again</button>
+        <button class="btns win-game-btn" aria-pressed="false">Play again</button>
       </div>
     </div>
-    <div id="lose-game">
+    <div id="lose-game" aria-hidden="true">
       <div class="game-over-text">
         <p class="lose-text">Wow, that was painful to watch...</p>
       </div>
       <div class="game-over-btn-container">
-         <button class="btns" id="play-again-btn">Play again</button>
+         <button class="btns" id="play-again-btn" aria-pressed="false">Play again</button>
       </div>
   </main>
   <section>
     <p id='lives'></p>
   </section>
   <section class="reset-btn-container">
-    <button class="btns" id="reset-btn">Reset Game</button>
+    <button class="btns" id="reset-btn" aria-pressed="false">Reset Game</button>
   </section>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="main.bundle.js"></script>
