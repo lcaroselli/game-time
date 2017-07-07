@@ -12,17 +12,17 @@ body {
 }
 
 body::after {
-  content: "";
-  background: url("/img/soot-sprint-bkgrd2.jpeg");
-  opacity: 0.4;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
   z-index: -1;
+  content: "";
+  background: url("/img/soot-sprint-bkgrd2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
   color: #000;
 }
 
@@ -34,8 +34,8 @@ header {
 
 h1 {
   font-family: 'Cinzel', serif;
-  text-align: center;
   font-size: 80px;
+  text-align: center;
   text-shadow: 2px 2px #a3a3c2;
 }
 
@@ -46,21 +46,21 @@ section {
 }
 
 p {
-  font-size: 35px;
   font-family: 'Roboto Mono', serif;
+  font-size: 35px;
   text-align: center;
   text-shadow: 2px 2px #a3a3c2;
 }
 
 button {
-  border-radius: 30px;
   padding: 10px 40px;
+  margin: 0;
   background-color: #000;
   border: 2px solid #a3a3c2;
+  border-radius: 30px;
   color: #fff;
   cursor: pointer;
   font-size: 30px;
-  margin: 0;
 }
 
 button:hover {
@@ -77,21 +77,21 @@ button:hover {
 
 /* CANVAS */
 #game {
-  border: 5px solid #000;
-  margin: auto;
   display: block;
+  margin: auto;
+  border: 5px solid #000;
 }
 
 /* START */
 #start-page {
   display: block;
+  margin: auto;
   height: 800px;
   width: 800px;
-  margin: auto;
   background-image: url('/img/sootsprintstart.png');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   border: 5px solid #000;
 }
 
@@ -114,14 +114,14 @@ button:hover {
 /* WIN */
 #win-game {
   display: none;
-  background-image: url("/img/sootstars.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
+  background-image: url("/img/sootstars.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #000;
 }
 
 .win-text-container {
@@ -147,16 +147,16 @@ button:hover {
 
 /* LOSE */
 #lose-game {
-  color: #fff;
-  background-image: url('/img/deadSoot.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: none;
-  border: 5px solid #000;
   margin: auto;
+  color: #fff;
   height: 800px;
   width: 800px;
+  background-image: url('/img/deadSoot.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #000;
 }
 
 .game-over-text {
@@ -176,15 +176,15 @@ button:hover {
 /* LEVEL UP */
 #level-up {
   display: none;
-  background-image: url('/img/level-up-soot.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #000;
-  border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
+  background-image: url('/img/level-up-soot.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #000;
+  color: #000;
 }
 
 .level-up-text-container {
@@ -197,6 +197,6 @@ button:hover {
 
 .level-up-btn-container {
   margin: 400px auto;
-  width: 225px;
   height: 300px;
+  width: 225px;
 }
