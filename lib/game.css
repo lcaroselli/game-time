@@ -52,7 +52,7 @@ button {
   border-radius: 30px;
   padding: 10px 40px;
   background-color: #000;
-  border: 1px solid #fff;
+  border: 2px solid #a3a3c2;
   color: #fff;
   cursor: pointer;
   font-size: 30px;
@@ -60,8 +60,8 @@ button {
 }
 
 button:hover {
-  background-color: #fff;
-  border: 1px solid #000;
+  background-color: #a3a3c2;
+  border: 2px solid #000;
   color: #000;
 }
 
@@ -111,15 +111,34 @@ button:hover {
 #win-game {
   display: none;
   background-image: url("/img/sootstars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
 }
 
+.win-text-container {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  height: 200px;
+  width: 200px;
+}
+
 .win-text {
-  z-index: 100;
-  position: absolute;
+  font-size: 30px;
+  text-align: left;
+}
+
+.play-again-btn-container {
+  position: relative;
+  top: 450px;
+  left: 510px;
+  height: 200px;
+  width: 300px;
 }
 
 /* LOSE */
@@ -142,7 +161,6 @@ button:hover {
 
 .lose-text {
   font-size: 40px;
-
 }
 
 .game-over-btn-container {
@@ -151,6 +169,7 @@ button:hover {
   height: 300px;
 }
 
+/* LEVEL UP */
 #level-up {
   color: #fff;
   display: none;
