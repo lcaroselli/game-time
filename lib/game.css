@@ -26,11 +26,9 @@ body::after {
   color: #000;
 }
 
-header {
-  margin: 15px 0;
-}
+/* Header */
 
-section {
+header {
   margin: 15px 0;
 }
 
@@ -41,8 +39,14 @@ h1 {
   text-shadow: 2px 2px #a3a3c2;
 }
 
+/* MAIN */
+
+section {
+  margin: 15px 0;
+}
+
 p {
-  font-size: 30px;
+  font-size: 35px;
   font-family: 'Roboto Mono', serif;
   text-align: center;
   text-shadow: 2px 2px #a3a3c2;
@@ -171,10 +175,28 @@ button:hover {
 
 /* LEVEL UP */
 #level-up {
-  color: #fff;
   display: none;
+  background-image: url('/img/level-up-soot.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #000;
   border: 5px solid #000;
   margin: auto;
   height: 800px;
   width: 800px;
+}
+
+.level-up-text-container {
+  margin: 100px 20px;
+}
+
+.level-up-text {
+  font-size: 40px;
+}
+
+.level-up-btn-container {
+  margin: 400px auto;
+  width: 225px;
+  height: 300px;
 }
