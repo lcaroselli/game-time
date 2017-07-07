@@ -29,9 +29,4 @@ describe ('Deadly', function() {
   it ('have a move function', function() {
     expect(deadly).to.respondTo('move');
   })
-
-
-
-
-
 })
