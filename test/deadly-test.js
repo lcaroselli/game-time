@@ -5,20 +5,20 @@ describe ('Deadly', function() {
   let deadly;
 
   beforeEach(function () {
-    deadly = new Deadly();
+    deadly = new Deadly(100, 650, 60, 40, 1.5);
   })
 
   it ('should be a function', function() {
     expect(deadly).to.be.an.instanceof(Deadly);
   });
 
-  it.skip ('should have an x, y, width, height, and speed', function() {
+  it ('should have an x, y, width, height, speed', function() {
     expect(deadly).to.deep.equal({
-      x: 400,
-      y: 700,
-      width: 40,
-      height: 50,
-      speed: 0
+      x: 100,
+      y: 650,
+      width: 60,
+      height: 40,
+      speed: 1.5
     })
   })
 
@@ -28,5 +28,9 @@ describe ('Deadly', function() {
 
   it ('have a move function', function() {
     expect(deadly).to.respondTo('move');
+  })
+
+  it ('should have a generateDeadly function', function() {
+    expect(deadly).to.respondTo('generateDeadly');
   })
 })
