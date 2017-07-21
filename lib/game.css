@@ -23,7 +23,7 @@ body::after {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.4;
-  color: #000;
+  color: #373737;
 }
 
 /* Header */
@@ -55,7 +55,7 @@ p {
 button {
   padding: 10px 40px;
   margin: 0;
-  background-color: #000;
+  background-color: #373737;
   border: 2px solid #a3a3c2;
   border-radius: 30px;
   color: #fff;
@@ -65,8 +65,8 @@ button {
 
 button:hover {
   background-color: #a3a3c2;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid #373737;
+  color: #373737;
 }
 
 .reset-btn-container {
@@ -79,7 +79,7 @@ button:hover {
 #game {
   display: block;
   margin: auto;
-  border: 5px solid #000;
+  border: 5px solid #373737;
 }
 
 /* START */
@@ -92,7 +92,7 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 5px solid #000;
+  border: 5px solid #373737;
 }
 
 .game-start-question {
@@ -121,7 +121,7 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 5px solid #000;
+  border: 5px solid #373737;
 }
 
 .win-text-container {
@@ -156,7 +156,7 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 5px solid #000;
+  border: 5px solid #373737;
 }
 
 .game-over-text {
@@ -183,8 +183,8 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 5px solid #000;
-  color: #000;
+  border: 5px solid #373737;
+  color: #373737;
 }
 
 .level-up-text-container {
